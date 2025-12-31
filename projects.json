@@ -18,10 +18,9 @@
   {
     "name": "example-projects",
     "repo": "https://github.com/jmirving/example-projects",
-    "status": "Stable",
+    "status": "Archived",
     "tech": ["Java", "Discord4J", "Maven", "Gradle", "Spring Boot", "SLF4J"],
-    "description": "Discord4J example bots demonstrating simple slash commands, with Maven/Gradle and Spring Boot variants.",
-    "future": "Update to newer Discord4J versions, add more interaction examples, and expand documentation."
+    "description": "Archived set of Discord4J example bots demonstrating simple slash commands, with Maven/Gradle and Spring Boot variants."
   },
   {
     "name": "project-index",
@@ -32,36 +31,33 @@
     "future": "Replace placeholder data with real entries, add tag/status filters, and refine layout polish."
   },
   {
-    "name": "Java",
-    "repo": "https://github.com/jmirving/Java",
-    "status": "WIP",
+    "name": "java-collection-archive",
+    "repo": "https://github.com/jmirving/java-collection-archive",
+    "status": "Archived",
     "tech": ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Gradle"],
-    "description": "Spring Boot chore chart app (simple-chore-chart) with user and chore management views.",
-    "future": "Add authentication, improve UI polish, and simplify configuration for local setup."
+    "description": "Archived collection repo for prior Java projects."
   },
   {
     "name": "ScanReconciliationTool",
     "repo": "https://github.com/jmirving/ScanReconciliationTool",
-    "status": "WIP",
+    "status": "Archived",
     "tech": ["Java", "Spring Boot", "Thymeleaf", "Spring Security", "JPA", "Gradle"],
-    "description": "Spring Boot web app for reconciling scan metadata across systems like SonarQube, Bitbucket, and Alfabet with reporting views.",
-    "future": "Harden configuration for external integrations, improve reporting export, and add clearer setup docs."
+    "description": "Archived portfolio demo of a Spring Boot web app for reconciling scan metadata across systems like SonarQube, Bitbucket, and Alfabet."
   },
   {
     "name": "SpaceProto",
     "repo": "https://github.com/jmirving/SpaceProto",
-    "status": "WIP",
+    "status": "Dormant",
     "tech": ["Unity", "C#"],
     "description": "Unity space game prototype project with starter assets and settings.",
     "future": "Define core gameplay loop, add basic controls, and build an initial level."
   },
   {
-    "name": "Unity",
-    "repo": "https://github.com/jmirving/Unity",
-    "status": "WIP",
+    "name": "unity-collection-archive",
+    "repo": "https://github.com/jmirving/unity-collection-archive",
+    "status": "Archived",
     "tech": ["Unity", "C#"],
-    "description": "Unity Battleship project with core assets and project settings.",
-    "future": "Implement game logic, add UI flow, and create AI or multiplayer modes."
+    "description": "Archived collection repo for prior Unity projects."
   },
   {
     "name": "ai-pb-data-download-cron",

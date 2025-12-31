@@ -11,13 +11,57 @@ const createElement = (tag, className, text) => {
   return element;
 };
 
+const STATUS_CONFIG = {
+  WIP: {
+    label: "WIP",
+    className: "status-wip",
+    description: "Active build-in-progress",
+  },
+  Stable: {
+    label: "Stable",
+    className: "status-stable",
+    description: "Maintained, minimal changes",
+  },
+  Idea: {
+    label: "Idea",
+    className: "status-idea",
+    description: "Concept or early planning",
+  },
+  Demo: {
+    label: "Demo",
+    className: "status-demo",
+    description: "One-off showcase, no future work",
+  },
+  Archived: {
+    label: "Archived",
+    className: "status-archived",
+    description: "Read-only, inactive repository",
+  },
+  Dormant: {
+    label: "Dormant",
+    className: "status-dormant",
+    description: "Paused or inactive",
+  },
+};
+
 const renderProject = (project) => {
   const card = createElement("article", "project-card");
   const header = createElement("div", "project-header");
   const title = createElement("h2", "project-title", project.name);
-  const status = createElement("span", "project-status", project.status);
+  const statusMeta = STATUS_CONFIG[project.status] || {
+    label: project.status || "Unknown",
+    className: "status-unknown",
+    description: "",
+  };
+  const statusWrap = createElement("div", "project-status");
+  const statusLabel = createElement(
+    "span",
+    `project-status-label ${statusMeta.className}`,
+    statusMeta.label
+  );
+  statusWrap.appendChild(statusLabel);
 
-  header.append(title, status);
+  header.append(title, statusWrap);
   card.appendChild(header);
 
   card.appendChild(

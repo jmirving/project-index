@@ -9,6 +9,20 @@
   --shadow: 0 18px 30px -24px rgba(31, 27, 22, 0.35);
   --page-bg: #f6efe6;
   --page-glow: #f3dcc6;
+  --status-wip-bg: #f4b266;
+  --status-wip-ink: #5a2f00;
+  --status-stable-bg: #a9d8b7;
+  --status-stable-ink: #1d4a2b;
+  --status-idea-bg: #a6c7f2;
+  --status-idea-ink: #1f3f63;
+  --status-demo-bg: #d9c1ae;
+  --status-demo-ink: #4a3a2f;
+  --status-archived-bg: #c9c0b8;
+  --status-archived-ink: #3e3530;
+  --status-dormant-bg: #e5d3c7;
+  --status-dormant-ink: #5a4333;
+  --status-unknown-bg: #e7e1da;
+  --status-unknown-ink: #4f4a43;
 }
 
 * {
@@ -68,7 +82,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.5rem 1rem;
 }
 
@@ -78,13 +92,56 @@ main {
 }
 
 .project-status {
+  display: flex;
+  align-items: flex-end;
+  min-width: 0;
+  text-align: right;
+}
+
+.project-status-label {
   font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--ink);
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+
+.status-wip {
+  background: var(--status-wip-bg);
+  color: var(--status-wip-ink);
+}
+
+.status-stable {
+  background: var(--status-stable-bg);
+  color: var(--status-stable-ink);
+}
+
+.status-idea {
+  background: var(--status-idea-bg);
+  color: var(--status-idea-ink);
+}
+
+.status-demo {
+  background: var(--status-demo-bg);
+  color: var(--status-demo-ink);
+}
+
+.status-archived {
+  background: var(--status-archived-bg);
+  color: var(--status-archived-ink);
+}
+
+.status-dormant {
+  background: var(--status-dormant-bg);
+  color: var(--status-dormant-ink);
+}
+
+.status-unknown {
+  background: var(--status-unknown-bg);
+  color: var(--status-unknown-ink);
 }
 
 .project-description {
@@ -144,5 +201,11 @@ main {
 
   .project-card {
     padding: 1.25rem;
+  }
+
+  .project-status {
+    align-items: flex-start;
+    min-width: 0;
+    text-align: left;
   }
 }
