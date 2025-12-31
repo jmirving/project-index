@@ -30,5 +30,61 @@
     "tech": ["HTML", "CSS", "Vanilla JS", "GitHub Pages"],
     "description": "Static portfolio site that renders a personal project index from projects.json for easy updates and GitHub Pages hosting.",
     "future": "Replace placeholder data with real entries, add tag/status filters, and refine layout polish."
+  },
+  {
+    "name": "Java",
+    "repo": "https://github.com/jmirving/Java",
+    "status": "WIP",
+    "tech": ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Gradle"],
+    "description": "Spring Boot chore chart app (simple-chore-chart) with user and chore management views.",
+    "future": "Add authentication, improve UI polish, and simplify configuration for local setup."
+  },
+  {
+    "name": "ScanReconciliationTool",
+    "repo": "https://github.com/jmirving/ScanReconciliationTool",
+    "status": "WIP",
+    "tech": ["Java", "Spring Boot", "Thymeleaf", "Spring Security", "JPA", "Gradle"],
+    "description": "Spring Boot web app for reconciling scan metadata across systems like SonarQube, Bitbucket, and Alfabet with reporting views.",
+    "future": "Harden configuration for external integrations, improve reporting export, and add clearer setup docs."
+  },
+  {
+    "name": "SpaceProto",
+    "repo": "https://github.com/jmirving/SpaceProto",
+    "status": "WIP",
+    "tech": ["Unity", "C#"],
+    "description": "Unity space game prototype project with starter assets and settings.",
+    "future": "Define core gameplay loop, add basic controls, and build an initial level."
+  },
+  {
+    "name": "Unity",
+    "repo": "https://github.com/jmirving/Unity",
+    "status": "WIP",
+    "tech": ["Unity", "C#"],
+    "description": "Unity Battleship project with core assets and project settings.",
+    "future": "Implement game logic, add UI flow, and create AI or multiplayer modes."
+  },
+  {
+    "name": "ai-pb-data-download-cron",
+    "repo": "https://github.com/jmirving/ai-pb-data-download-cron",
+    "status": "Idea",
+    "tech": ["Java", "Gradle"],
+    "description": "Cron-style downloader intended to gather, parse, and store data for the AI pick/ban service.",
+    "future": "Implement download/parsing pipeline, schedule runs, and add storage targets for processed datasets."
+  },
+  {
+    "name": "discord-jungle-score-bot",
+    "repo": "https://github.com/jmirving/discord-jungle-score-bot",
+    "status": "WIP",
+    "tech": ["Java", "Spring Boot", "JDA", "H2", "Gradle"],
+    "description": "Discord bot for tracking League of Legends jungle clear times with slash commands and embedded leaderboard logic.",
+    "future": "Add deployment docs, improve admin workflows, and expand stats/leaderboard views."
+  },
+  {
+    "name": "simple-draft-ui",
+    "repo": "https://github.com/jmirving/simple-draft-ui",
+    "status": "Idea",
+    "tech": ["TBD"],
+    "description": "Draft UI concept for managing player champion pools and team comp types.",
+    "future": "Define data model and build a basic interactive prototype."
   }
 ]
