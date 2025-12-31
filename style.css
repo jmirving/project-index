@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: #1c1c1c;
+  background: #f7f4ef;
+}
+
+header {
+  padding: 2rem 1.5rem 1rem;
+}
+
+main {
+  padding: 0 1.5rem 2rem;
+}
+
+#projects {
+  display: grid;
+  gap: 1rem;
+}

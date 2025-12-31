@@ -28,6 +28,7 @@ Implement tasks for this repo safely and incrementally.
 6. Do NOT mark tasks complete unless they meet the criteria in TODO.md.
 
 This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get started.
+Note: In this environment, `bd` may require escalated permissions to access `~/.beads/registry.lock` for daemon features (auto sync/pull/push). Use escalation for `bd` commands when needed.
 
 ## Quick Reference
 
