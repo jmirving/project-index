@@ -107,15 +107,6 @@ const renderProject = (project) => {
   );
   card.appendChild(descriptionSection);
 
-  if (project.quickStart) {
-    const quickStart = createElement(
-      "p",
-      "project-quick-start",
-      `Quick start: ${project.quickStart}`
-    );
-    card.appendChild(quickStart);
-  }
-
   const deploymentSection = createSection("Deployment");
   const deploy = createElement("div", "project-deploy");
   const deployTypeValue = project.deploy?.type || "Not set";
@@ -124,14 +115,13 @@ const renderProject = (project) => {
     "project-deploy-type",
     deployTypeValue
   );
-  const deployStabilityValue =
-    project.status === "Stable" ? "Stable" : "Unstable";
+  const deployLiveValue = project.deploy?.live ? "Live" : "Not live";
   const deployStability = createElement(
     "span",
     `project-deploy-stability ${
-      deployStabilityValue === "Stable" ? "deploy-stable" : "deploy-unstable"
+      deployLiveValue === "Live" ? "deploy-stable" : "deploy-unstable"
     }`,
-    deployStabilityValue
+    deployLiveValue
   );
   deploy.append(deployType, deployStability);
   if (project.deploy?.url) {

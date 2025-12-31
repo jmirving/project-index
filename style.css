@@ -219,15 +219,6 @@ main {
   color: var(--muted);
 }
 
-.project-quick-start {
-  margin: 0 0 1rem;
-  padding: 0.65rem 0.9rem;
-  border-radius: 14px;
-  background: #f7e6d7;
-  color: var(--ink);
-  font-size: 0.95rem;
-}
-
 .project-deploy {
   display: flex;
   flex-wrap: wrap;

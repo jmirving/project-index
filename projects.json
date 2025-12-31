@@ -21,11 +21,11 @@
         "gitignore": true,
         "license": false
       },
-      "quickStart": "Open the README, install requirements, and run the training pipeline.",
       "order": 2,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -50,11 +50,11 @@
         "gitignore": true,
         "license": false
       },
-      "quickStart": "Read the README, add your Riot API key, and start the Flask app.",
       "order": 4,
       "deploy": {
         "type": "Render",
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -79,10 +79,10 @@
         "license": false
       },
       "order": 9,
-      "quickStart": null,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -105,11 +105,11 @@
         "gitignore": false,
         "license": false
       },
-      "quickStart": "Edit projects.json, then run a local server to review changes.",
       "order": 1,
       "deploy": {
         "type": "GitHub Pages",
-        "url": "https://jmirving.github.io/project-index/"
+        "url": "https://jmirving.github.io/project-index/",
+        "live": true
       }
     },
     {
@@ -133,10 +133,10 @@
         "license": null
       },
       "order": 10,
-      "quickStart": null,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -161,10 +161,10 @@
         "license": null
       },
       "order": 8,
-      "quickStart": null,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -185,11 +185,11 @@
         "gitignore": null,
         "license": null
       },
-      "quickStart": "Open the Unity project and play the main scene.",
       "order": 5,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -210,10 +210,10 @@
         "license": null
       },
       "order": 11,
-      "quickStart": null,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -234,11 +234,11 @@
         "gitignore": null,
         "license": null
       },
-      "quickStart": "Draft the download pipeline and wire up a scheduler entry point.",
       "order": 6,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -262,11 +262,11 @@
         "gitignore": null,
         "license": null
       },
-      "quickStart": "Review the README, configure the bot token, and launch the bot.",
       "order": 3,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     },
     {
@@ -286,11 +286,11 @@
         "gitignore": null,
         "license": null
       },
-      "quickStart": "Define a minimal data model and build a quick HTML prototype.",
       "order": 7,
       "deploy": {
         "type": null,
-        "url": null
+        "url": null,
+        "live": false
       }
     }
   ]
