@@ -1,11 +1,13 @@
 # Agent Instructions (Codex)
 
+Always read `~/.config/agent/POLICY.md` before doing any work; it defines the shell policy, including the required wrappers for git and Beads commands and the allowed Beads actions.
+
 ## Mission
 Implement tasks for this repo safely and incrementally.
 
 ## Source of truth
 - Task list is in `TODO.md`.
-- Use Beads (`bd`) to track task status and notes.
+- Use Beads to track task status and notes.
 - Keep the site static: HTML/CSS/vanilla JS only.
 
 ## Constraints (hard)
@@ -26,45 +28,3 @@ Implement tasks for this repo safely and incrementally.
    - files touched
    - how to verify
 6. Do NOT mark tasks complete unless they meet the criteria in TODO.md.
-
-This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get started.
-Note: In this environment, `bd` may require escalated permissions to access `~/.beads/registry.lock` for daemon features (auto sync/pull/push). Use escalation for `bd` commands when needed.
-
-## Quick Reference
-
-```bash
-bd ready              # Find available work
-bd show <id>          # View issue details
-bd update <id> --status in_progress  # Claim work
-bd close <id>         # Complete work
-bd sync               # Sync with git
-```
-
-## Landing the Plane (Session Completion)
-
-**When ending a work session**, you MUST complete ALL steps below. Work is NOT complete until `git push` succeeds.
-
-**MANDATORY WORKFLOW:**
-
-1. **File issues for remaining work** - Create issues for anything that needs follow-up
-2. **Run quality gates** (if code changed) - Tests, linters, builds
-3. **Update issue status** - Close finished work, update in-progress items
-4. **PUSH TO REMOTE** - This is MANDATORY:
-   ```bash
-   git pull --rebase
-   bd sync
-   git push
-   git status  # MUST show "up to date with origin"
-   ```
-5. **Clean up** - Clear stashes, prune remote branches
-6. **Verify** - All changes committed AND pushed
-7. **Hand off** - Provide context for next session
-
-**CRITICAL RULES:**
-- Work is NOT complete until `git push` succeeds
-- NEVER stop before pushing - that leaves work stranded locally
-- NEVER say "ready to push when you are" - YOU must push
-- If push fails, resolve and retry until it succeeds
-
-You are allowed to run `bd` commands to create, list, and update Beads issues as you deem necessary.
-Do not delete issues or rewrite history unless explicitly instructed.
