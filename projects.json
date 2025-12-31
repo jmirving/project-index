@@ -1,86 +1,297 @@
-[
-  {
-    "name": "pb-ai",
-    "repo": "https://github.com/jmirving/ai-pb",
-    "status": "WIP",
-    "tech": ["Python", "PyTorch", "pandas", "scikit-learn"],
-    "description": "Machine learning pipeline to predict League of Legends pick/ban outcomes using Oracle's Elixir data, with ingestion and training scripts.",
-    "future": "Implement inference CLI, automate data ingestion, add model serving/storage/versioning, and build a UI for draft visualization."
-  },
-  {
-    "name": "cpm-detail",
-    "repo": "https://github.com/jmirving/cpm-detail",
-    "status": "WIP",
-    "tech": ["Python", "Flask", "Jinja2", "Bootstrap", "Riot API", "pandas"],
-    "description": "Flask web app that pulls League of Legends match data from the Riot API to show CS-per-minute details and comparisons.",
-    "future": "Add caching/rate-limit handling, improve visualizations, centralize API key/config, and add deployment documentation."
-  },
-  {
-    "name": "example-projects",
-    "repo": "https://github.com/jmirving/example-projects",
-    "status": "Archived",
-    "tech": ["Java", "Discord4J", "Maven", "Gradle", "Spring Boot", "SLF4J"],
-    "description": "Archived set of Discord4J example bots demonstrating simple slash commands, with Maven/Gradle and Spring Boot variants."
-  },
-  {
-    "name": "project-index",
-    "repo": "https://github.com/jmirving/project-index",
-    "status": "WIP",
-    "tech": ["HTML", "CSS", "Vanilla JS", "GitHub Pages"],
-    "description": "Static portfolio site that renders a personal project index from projects.json for easy updates and GitHub Pages hosting.",
-    "future": "Replace placeholder data with real entries, add tag/status filters, and refine layout polish."
-  },
-  {
-    "name": "java-collection-archive",
-    "repo": "https://github.com/jmirving/java-collection-archive",
-    "status": "Archived",
-    "tech": ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Gradle"],
-    "description": "Archived collection repo for prior Java projects."
-  },
-  {
-    "name": "ScanReconciliationTool",
-    "repo": "https://github.com/jmirving/ScanReconciliationTool",
-    "status": "Archived",
-    "tech": ["Java", "Spring Boot", "Thymeleaf", "Spring Security", "JPA", "Gradle"],
-    "description": "Archived portfolio demo of a Spring Boot web app for reconciling scan metadata across systems like SonarQube, Bitbucket, and Alfabet."
-  },
-  {
-    "name": "SpaceProto",
-    "repo": "https://github.com/jmirving/SpaceProto",
-    "status": "Dormant",
-    "tech": ["Unity", "C#"],
-    "description": "Unity space game prototype project with starter assets and settings.",
-    "future": "Define core gameplay loop, add basic controls, and build an initial level."
-  },
-  {
-    "name": "unity-collection-archive",
-    "repo": "https://github.com/jmirving/unity-collection-archive",
-    "status": "Archived",
-    "tech": ["Unity", "C#"],
-    "description": "Archived collection repo for prior Unity projects."
-  },
-  {
-    "name": "ai-pb-data-download-cron",
-    "repo": "https://github.com/jmirving/ai-pb-data-download-cron",
-    "status": "Idea",
-    "tech": ["Java", "Gradle"],
-    "description": "Cron-style downloader intended to gather, parse, and store data for the AI pick/ban service.",
-    "future": "Implement download/parsing pipeline, schedule runs, and add storage targets for processed datasets."
-  },
-  {
-    "name": "discord-jungle-score-bot",
-    "repo": "https://github.com/jmirving/discord-jungle-score-bot",
-    "status": "WIP",
-    "tech": ["Java", "Spring Boot", "JDA", "H2", "Gradle"],
-    "description": "Discord bot for tracking League of Legends jungle clear times with slash commands and embedded leaderboard logic.",
-    "future": "Add deployment docs, improve admin workflows, and expand stats/leaderboard views."
-  },
-  {
-    "name": "simple-draft-ui",
-    "repo": "https://github.com/jmirving/simple-draft-ui",
-    "status": "Idea",
-    "tech": ["TBD"],
-    "description": "Draft UI concept for managing player champion pools and team comp types.",
-    "future": "Define data model and build a basic interactive prototype."
-  }
-]
+{
+  "updatedAt": "2025-12-31",
+  "projects": [
+    {
+      "name": "pb-ai",
+      "repo": "https://github.com/jmirving/ai-pb",
+      "status": "WIP",
+      "lastUpdated": "2025-09-28",
+      "tech": [
+        "Python",
+        "PyTorch",
+        "pandas",
+        "scikit-learn"
+      ],
+      "description": "Machine learning pipeline to predict League of Legends pick/ban outcomes using Oracle's Elixir data, with ingestion and training scripts.",
+      "future": "Implement inference CLI, automate data ingestion, add model serving/storage/versioning, and build a UI for draft visualization.",
+      "baseFiles": {
+        "readme": true,
+        "agents": false,
+        "make": false,
+        "gitignore": true,
+        "license": false
+      },
+      "quickStart": "Open the README, install requirements, and run the training pipeline.",
+      "order": 2,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "cpm-detail",
+      "repo": "https://github.com/jmirving/cpm-detail",
+      "status": "WIP",
+      "lastUpdated": "2024-12-23",
+      "tech": [
+        "Python",
+        "Flask",
+        "Jinja2",
+        "Bootstrap",
+        "Riot API",
+        "pandas"
+      ],
+      "description": "Flask web app that pulls League of Legends match data from the Riot API to show CS-per-minute details and comparisons.",
+      "future": "Add caching/rate-limit handling, improve visualizations, centralize API key/config, and add deployment documentation.",
+      "baseFiles": {
+        "readme": false,
+        "agents": false,
+        "make": false,
+        "gitignore": true,
+        "license": false
+      },
+      "quickStart": "Read the README, add your Riot API key, and start the Flask app.",
+      "order": 4,
+      "deploy": {
+        "type": "Render",
+        "url": null
+      }
+    },
+    {
+      "name": "example-projects",
+      "repo": "https://github.com/jmirving/example-projects",
+      "status": "Archived",
+      "lastUpdated": "2022-02-08",
+      "tech": [
+        "Java",
+        "Discord4J",
+        "Maven",
+        "Gradle",
+        "Spring Boot",
+        "SLF4J"
+      ],
+      "description": "Archived set of Discord4J example bots demonstrating simple slash commands, with Maven/Gradle and Spring Boot variants.",
+      "baseFiles": {
+        "readme": true,
+        "agents": false,
+        "make": false,
+        "gitignore": true,
+        "license": false
+      },
+      "order": 9,
+      "quickStart": null,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "project-index",
+      "repo": "https://github.com/jmirving/project-index",
+      "status": "WIP",
+      "lastUpdated": "2025-12-31",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Vanilla JS",
+        "GitHub Pages"
+      ],
+      "description": "Static portfolio site that renders a personal project index from projects.json for easy updates and GitHub Pages hosting.",
+      "future": "Replace placeholder data with real entries, add tag/status filters, and refine layout polish.",
+      "baseFiles": {
+        "readme": true,
+        "agents": true,
+        "make": false,
+        "gitignore": false,
+        "license": false
+      },
+      "quickStart": "Edit projects.json, then run a local server to review changes.",
+      "order": 1,
+      "deploy": {
+        "type": "GitHub Pages",
+        "url": "https://jmirving.github.io/project-index/"
+      }
+    },
+    {
+      "name": "java-collection-archive",
+      "repo": "https://github.com/jmirving/java-collection-archive",
+      "status": "Archived",
+      "lastUpdated": null,
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "Thymeleaf",
+        "MySQL",
+        "Gradle"
+      ],
+      "description": "Archived collection repo for prior Java projects.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "order": 10,
+      "quickStart": null,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "ScanReconciliationTool",
+      "repo": "https://github.com/jmirving/ScanReconciliationTool",
+      "status": "Demo",
+      "lastUpdated": null,
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "Thymeleaf",
+        "Spring Security",
+        "JPA",
+        "Gradle"
+      ],
+      "description": "Archived portfolio demo of a Spring Boot web app for reconciling scan metadata across systems like SonarQube, Bitbucket, and Alfabet.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "order": 8,
+      "quickStart": null,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "SpaceProto",
+      "repo": "https://github.com/jmirving/SpaceProto",
+      "status": "Dormant",
+      "lastUpdated": null,
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "description": "Unity space game prototype project with starter assets and settings.",
+      "future": "Define core gameplay loop, add basic controls, and build an initial level.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "quickStart": "Open the Unity project and play the main scene.",
+      "order": 5,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "unity-collection-archive",
+      "repo": "https://github.com/jmirving/unity-collection-archive",
+      "status": "Archived",
+      "lastUpdated": null,
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "description": "Archived collection repo for prior Unity projects.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "order": 11,
+      "quickStart": null,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "ai-pb-data-download-cron",
+      "repo": "https://github.com/jmirving/ai-pb-data-download-cron",
+      "status": "Idea",
+      "lastUpdated": null,
+      "tech": [
+        "Java",
+        "Gradle"
+      ],
+      "description": "Cron-style downloader intended to gather, parse, and store data for the AI pick/ban service.",
+      "future": "Implement download/parsing pipeline, schedule runs, and add storage targets for processed datasets.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "quickStart": "Draft the download pipeline and wire up a scheduler entry point.",
+      "order": 6,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "discord-jungle-score-bot",
+      "repo": "https://github.com/jmirving/discord-jungle-score-bot",
+      "status": "WIP",
+      "lastUpdated": null,
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "JDA",
+        "H2",
+        "Gradle"
+      ],
+      "description": "Discord bot for tracking League of Legends jungle clear times with slash commands and embedded leaderboard logic.",
+      "future": "Add deployment docs, improve admin workflows, and expand stats/leaderboard views.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "quickStart": "Review the README, configure the bot token, and launch the bot.",
+      "order": 3,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    },
+    {
+      "name": "simple-draft-ui",
+      "repo": "https://github.com/jmirving/simple-draft-ui",
+      "status": "Idea",
+      "lastUpdated": null,
+      "tech": [
+        "TBD"
+      ],
+      "description": "Draft UI concept for managing player champion pools and team comp types.",
+      "future": "Define data model and build a basic interactive prototype.",
+      "baseFiles": {
+        "readme": null,
+        "agents": null,
+        "make": null,
+        "gitignore": null,
+        "license": null
+      },
+      "quickStart": "Define a minimal data model and build a quick HTML prototype.",
+      "order": 7,
+      "deploy": {
+        "type": null,
+        "url": null
+      }
+    }
+  ]
+}

@@ -23,6 +23,12 @@
   --status-dormant-ink: #5a4333;
   --status-unknown-bg: #e7e1da;
   --status-unknown-ink: #4f4a43;
+  --base-present-bg: #d6edd8;
+  --base-present-ink: #1f4a2b;
+  --base-missing-bg: #f2d1c7;
+  --base-missing-ink: #6f2a1f;
+  --base-unknown-bg: #ece5dd;
+  --base-unknown-ink: #4f4a43;
 }
 
 * {
@@ -59,6 +65,12 @@ header p {
   margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.data-updated {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 main {
@@ -99,13 +111,74 @@ main {
 }
 
 .project-status-label {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 999px;
   font-weight: 700;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.project-meta {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0.55rem 0 0.9rem;
+}
+
+.project-status-detail {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.project-last-updated {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.project-base-files {
+  margin: 0 0 1rem;
+}
+
+.project-base-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project-base-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.project-base-item {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.base-present {
+  background: var(--base-present-bg);
+  color: var(--base-present-ink);
+}
+
+.base-missing {
+  background: var(--base-missing-bg);
+  color: var(--base-missing-ink);
+}
+
+.base-unknown {
+  background: var(--base-unknown-bg);
+  color: var(--base-unknown-ink);
 }
 
 
@@ -147,6 +220,41 @@ main {
 .project-description {
   margin: 1rem 0 1.1rem;
   color: var(--muted);
+}
+
+.project-quick-start {
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 14px;
+  background: #f7e6d7;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.project-deploy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.project-deploy-label,
+.project-deploy-type {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.project-deploy-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.project-deploy-link:hover {
+  text-decoration: underline;
 }
 
 .project-tech {
