@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "Project Alpha",
+    "repo": "https://github.com/example/project-alpha",
+    "status": "WIP",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "description": "A small demo project showcasing a static site workflow.",
+    "future": "Add search and tag filters.",
+    "demo": "https://example.com/project-alpha"
+  },
+  {
+    "name": "Project Beta",
+    "repo": "https://github.com/example/project-beta",
+    "status": "Idea",
+    "tech": ["Go", "SQLite"],
+    "description": "An idea for a lightweight CLI tool to catalog notes."
+  }
+]

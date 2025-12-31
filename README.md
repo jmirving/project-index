@@ -46,19 +46,25 @@ This repo should still make sense if opened again after a year.
 
 ---
 
-## Repo Structure (target)
+## Repo Structure
 /
 ├── index.html
 ├── style.css
 ├── script.js
 ├── projects.json
-└── README.md
+├── README.md
+├── TODO.md
+└── AGENTS.md
 
 ---
 
+## Updating Projects
+- Edit `projects.json`
+- Refresh the page to see updates
+
 ## Development Workflow
 - Edit files locally
-- Refresh browser to test
+- Serve locally for testing (example: `python3 -m http.server`)
 - Deploy by pushing to `main`
 - GitHub Pages serves from repository root
 
