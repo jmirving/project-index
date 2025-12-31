@@ -65,3 +65,5 @@ bd sync               # Sync with git
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
 
+You are allowed to run `bd` commands to create, list, and update Beads issues as you deem necessary.
+Do not delete issues or rewrite history unless explicitly instructed.
