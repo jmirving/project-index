@@ -1,18 +1,34 @@
 [
   {
-    "name": "Project Alpha",
-    "repo": "https://github.com/example/project-alpha",
+    "name": "pb-ai",
+    "repo": "https://github.com/jmirving/ai-pb",
     "status": "WIP",
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "description": "A small demo project showcasing a static site workflow.",
-    "future": "Add search and tag filters.",
-    "demo": "https://example.com/project-alpha"
+    "tech": ["Python", "PyTorch", "pandas", "scikit-learn"],
+    "description": "Machine learning pipeline to predict League of Legends pick/ban outcomes using Oracle's Elixir data, with ingestion and training scripts.",
+    "future": "Implement inference CLI, automate data ingestion, add model serving/storage/versioning, and build a UI for draft visualization."
   },
   {
-    "name": "Project Beta",
-    "repo": "https://github.com/example/project-beta",
-    "status": "Idea",
-    "tech": ["Go", "SQLite"],
-    "description": "An idea for a lightweight CLI tool to catalog notes."
+    "name": "cpm-detail",
+    "repo": "https://github.com/jmirving/cpm-detail",
+    "status": "WIP",
+    "tech": ["Python", "Flask", "Jinja2", "Bootstrap", "Riot API", "pandas"],
+    "description": "Flask web app that pulls League of Legends match data from the Riot API to show CS-per-minute details and comparisons.",
+    "future": "Add caching/rate-limit handling, improve visualizations, centralize API key/config, and add deployment documentation."
+  },
+  {
+    "name": "example-projects",
+    "repo": "https://github.com/jmirving/example-projects",
+    "status": "Stable",
+    "tech": ["Java", "Discord4J", "Maven", "Gradle", "Spring Boot", "SLF4J"],
+    "description": "Discord4J example bots demonstrating simple slash commands, with Maven/Gradle and Spring Boot variants.",
+    "future": "Update to newer Discord4J versions, add more interaction examples, and expand documentation."
+  },
+  {
+    "name": "project-index",
+    "repo": "https://github.com/jmirving/project-index",
+    "status": "WIP",
+    "tech": ["HTML", "CSS", "Vanilla JS", "GitHub Pages"],
+    "description": "Static portfolio site that renders a personal project index from projects.json for easy updates and GitHub Pages hosting.",
+    "future": "Replace placeholder data with real entries, add tag/status filters, and refine layout polish."
   }
 ]
