@@ -68,17 +68,9 @@ const createSection = (title) => {
 
 const renderProject = (project) => {
   const card = createElement("article", "project-card");
-  const isArchived = project.status === "Archived";
-  if (isArchived) {
-    const descriptionSection = createSection("Description");
-    descriptionSection.appendChild(
-      createElement("p", "project-description", project.description)
-    );
-    card.appendChild(descriptionSection);
-    return card;
-  }
   const header = createElement("div", "project-header");
   const title = createElement("h2", "project-title");
+  const isArchived = project.status === "Archived";
   if (project.repo) {
     const titleLink = createElement("a", "project-title-link", project.name);
     titleLink.href = project.repo;
@@ -107,14 +99,20 @@ const renderProject = (project) => {
   descriptionSection.appendChild(
     createElement("p", "project-description", project.description)
   );
-  descriptionSection.appendChild(
-    createElement(
-      "p",
-      "project-last-updated",
-      `Last updated: ${formatDate(project.lastUpdated)}`
-    )
-  );
+  if (!isArchived) {
+    descriptionSection.appendChild(
+      createElement(
+        "p",
+        "project-last-updated",
+        `Last updated: ${formatDate(project.lastUpdated)}`
+      )
+    );
+  }
   card.appendChild(descriptionSection);
+
+  if (isArchived) {
+    return card;
+  }
 
   const deploymentSection = createSection("Deployment");
   const deploy = createElement("div", "project-deploy");

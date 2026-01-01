@@ -1,2 +1,3 @@
 - [x] Applied current projects.json update notes (deployment metadata, last-updated dates, archived status, and removed deleted repo).
 - [x] Hide deployment, base files, tech stack, and future ideas for archived projects.
+- [x] Archived projects should still show title + status while only showing description content.
