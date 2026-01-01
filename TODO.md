@@ -1,3 +1,2 @@
-1. [x] Add cache-busting query strings to style/script includes for GitHub Pages.
-2. [x] Refine project card sections: move repo link into title, add section headers, add stability in deployment, remove status detail line.
-3. [x] Remove quick start section; use a deployment live status indicator instead of unstable.
+- [x] Applied current projects.json update notes (deployment metadata, last-updated dates, archived status, and removed deleted repo).
+- [x] Hide deployment, base files, tech stack, and future ideas for archived projects.

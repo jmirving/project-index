@@ -23,8 +23,8 @@
       },
       "order": 2,
       "deploy": {
-        "type": null,
-        "url": null,
+        "type": "n/a",
+        "url": "n/a",
         "live": false
       }
     },
@@ -53,7 +53,7 @@
       "order": 4,
       "deploy": {
         "type": "Render",
-        "url": null,
+        "url": "https://cpm-detail.onrender.com",
         "live": false
       }
     },
@@ -142,7 +142,7 @@
     {
       "name": "ScanReconciliationTool",
       "repo": "https://github.com/jmirving/ScanReconciliationTool",
-      "status": "Demo",
+      "status": "Archived",
       "lastUpdated": null,
       "tech": [
         "Java",
@@ -171,7 +171,7 @@
       "name": "SpaceProto",
       "repo": "https://github.com/jmirving/SpaceProto",
       "status": "Dormant",
-      "lastUpdated": null,
+      "lastUpdated": "2025-09-16",
       "tech": [
         "Unity",
         "C#"
@@ -187,8 +187,8 @@
       },
       "order": 5,
       "deploy": {
-        "type": null,
-        "url": null,
+        "type": "n/a",
+        "url": "n/a",
         "live": false
       }
     },
@@ -220,7 +220,7 @@
       "name": "ai-pb-data-download-cron",
       "repo": "https://github.com/jmirving/ai-pb-data-download-cron",
       "status": "Idea",
-      "lastUpdated": null,
+      "lastUpdated": "2025-03-30",
       "tech": [
         "Java",
         "Gradle"
@@ -236,8 +236,8 @@
       },
       "order": 6,
       "deploy": {
-        "type": null,
-        "url": null,
+        "type": "Render",
+        "url": "n/a",
         "live": false
       }
     },
@@ -245,7 +245,7 @@
       "name": "discord-jungle-score-bot",
       "repo": "https://github.com/jmirving/discord-jungle-score-bot",
       "status": "WIP",
-      "lastUpdated": null,
+      "lastUpdated": "2025-10-02",
       "tech": [
         "Java",
         "Spring Boot",
@@ -264,32 +264,8 @@
       },
       "order": 3,
       "deploy": {
-        "type": null,
-        "url": null,
-        "live": false
-      }
-    },
-    {
-      "name": "simple-draft-ui",
-      "repo": "https://github.com/jmirving/simple-draft-ui",
-      "status": "Idea",
-      "lastUpdated": null,
-      "tech": [
-        "TBD"
-      ],
-      "description": "Draft UI concept for managing player champion pools and team comp types.",
-      "future": "Define data model and build a basic interactive prototype.",
-      "baseFiles": {
-        "readme": null,
-        "agents": null,
-        "make": null,
-        "gitignore": null,
-        "license": null
-      },
-      "order": 7,
-      "deploy": {
-        "type": null,
-        "url": null,
+        "type": "Discord",
+        "url": "n/a",
         "live": false
       }
     }

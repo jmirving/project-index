@@ -68,6 +68,15 @@ const createSection = (title) => {
 
 const renderProject = (project) => {
   const card = createElement("article", "project-card");
+  const isArchived = project.status === "Archived";
+  if (isArchived) {
+    const descriptionSection = createSection("Description");
+    descriptionSection.appendChild(
+      createElement("p", "project-description", project.description)
+    );
+    card.appendChild(descriptionSection);
+    return card;
+  }
   const header = createElement("div", "project-header");
   const title = createElement("h2", "project-title");
   if (project.repo) {
